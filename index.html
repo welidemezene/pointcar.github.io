@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pointcar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">pointcar</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#spares">Spare parts</a></li>
+          <li><a href="#blogs">Blog and News</a></li>
+        </ul>
+        <form
+          id="searchForm"
+          class="search-form"
+          onsubmit="return searchSite(event)"
+        >
+          <input type="text" placeholder="Search..." id="searchInput" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="menu-icon" id="menu-icon">☰</div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="container">
+        <div class="homepg">
+          <h1>
+            We Have Everything <br />
+            <span>Your Car</span> Need
+          </h1>
+        </div>
+      </div>
+      <div class="cartexts">
+        <h2>
+          <span id="all">All Cars</span>
+          <br />
+          <span id="we"
+            >We Have All Types Of Cars <br />
+            <span id="it">It is the most expensive car</span>
+          </span>
+        </h2>
+      </div>
+    </section>
+
+    <section class="car-showcase" id="cars">
+      <div class="car-card">
+        <img src="image/aston-1814276_1280.jpg" alt="Car Model 1" />
+        <h3>Car Model 1</h3>
+        <p>
+          A brief description of Car Model 1, highlighting its features and
+          specifications.
+        </p>
+        <a href="cars.html#model1"> <button>View Details</button></a>
+      </div>
+      <div class="car-card">
+        <img src="image/black-605334_1280.jpg" alt="Car Model 2" />
+        <h3>Car Model 2</h3>
+        <p>
+          A brief description of Car Model 2, highlighting its features and
+          specifications.
+        </p>
+        <a href="cars.html#model2"> <button>View Details</button></a>
+      </div>
+      <div class="car-card">
+        <img src="image/car-49278_1280.jpg" alt="Car Model 3" />
+        <h3>Car Model 3</h3>
+        <p>
+          A brief description of Car Model 3, highlighting its features and
+          specifications.
+        </p>
+        <a href="cars.html#model3"><button>View Details</button></a>
+      </div>
+      <div class="car-card">
+        <img src="image/aston-1814276_1280.jpg" alt="Car Model 1" />
+        <h3>Car Model 4</h3>
+        <p>
+          A brief description of Car Model 4, highlighting its features and
+          specifications.
+        </p>
+        <a href="cars.html#model4"><button>View Details</button></a>
+      </div>
+      <div class="car-card">
+        <img src="image/black-605334_1280.jpg" alt="Car Model 2" />
+        <h3>Car Model 5</h3>
+        <p>
+          A brief description of Car Model 5, highlighting its features and
+          specifications.
+        </p>
+        <a href="cars.html#model5"><button>View Details</button></a>
+      </div>
+      <div class="car-card">
+        <img src="image/car-49278_1280.jpg" alt="Car Model 3" />
+        <h3>Car Model 6</h3>
+        <p>
+          A brief description of Car Model 6, highlighting its features and
+          specifications.
+        </p>
+        <a href="cars.html#model6"> <button>View Details</button></a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="image/aston-1814276_1280.jpg" alt="About Us Image" />
+        </div>
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>
+            Our company is dedicated to providing the best services to our
+            clients. With years of experience in the industry, we pride
+            ourselves on our commitment to quality and customer satisfaction.
+          </p>
+          <p>
+            We offer a wide range of products and services designed to meet the
+            diverse needs of our customers. Our team of experts is always ready
+            to assist you and provide solutions that are tailored to your
+            specific requirements.
+          </p>
+          <a href="detial.html" class="learn-more-button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other page content -->
+
+    <section id="spares">
+      <div class="cartexts">
+        <h2>
+          <span id="all">What We Offer</span>
+          <br />
+          <span id="we"
+            >Our Car Is Always Excellent<br />
+            <span id="it">It is the most expensive car</span>
+          </span>
+        </h2>
+      </div>
+
+      <div class="spare-parts-container">
+        <div class="spare-part-card">
+          <img
+            src="image/maserati-gran-turismo-1649119_1280.jpg"
+            alt="Spare Part 1"
+            class="part-image"
+          />
+          <div class="part-details">
+            <h3 class="part-name">Brake Pads</h3>
+            <p class="part-price">$50.00</p>
+            <div class="part-review">★★★★☆ (200 reviews)</div>
+            <div class="part-actions">
+              <a href="buynow.html"> <button class="buy-button">Buy</button></a>
+              <a href="spares.html#spare1" class="view-details">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spare-part-card">
+          <img
+            src="image/pexels-davidmcelwee-24013016.jpg"
+            alt="Spare Part 2"
+            class="part-image"
+          />
+          <div class="part-details">
+            <h3 class="part-name">Oil Filter</h3>
+            <p class="part-price">$20.00</p>
+            <div class="part-review">★★★☆☆ (150 reviews)</div>
+            <div class="part-actions">
+              <a href="buynow.html"><button class="buy-button">Buy</button></a>
+              <a href="spares.html#spare2" class="view-details">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spare-part-card">
+          <img
+            src="image/pexels-mikebirdy-188777.jpg"
+            alt="Spare Part 3"
+            class="part-image"
+          />
+          <div class="part-details">
+            <h3 class="part-name">Air Filter</h3>
+            <p class="part-price">$30.00</p>
+            <div class="part-review">★★★★★ (320 reviews)</div>
+            <div class="part-actions">
+              <a href="buynow.html"><button class="buy-button">Buy</button></a>
+              <a href="spares.html#spare3" class="view-details">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spare-parts-container">
+        <div class="spare-part-card">
+          <img
+            src="image/pexels-pixabay-326259.jpg"
+            alt="Spare Part 1"
+            class="part-image"
+          />
+          <div class="part-details">
+            <h3 class="part-name">Brake Pads</h3>
+            <p class="part-price">$50.00</p>
+            <div class="part-review">★★★★☆ (200 reviews)</div>
+            <div class="part-actions">
+              <a href="buynow.html#spare4"
+                ><button class="buy-button">Buy</button></a
+              >
+              <a href="spares.html" class="view-details">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spare-part-card">
+          <img
+            src="image/pexels-visionarymind-590396999-17575475.jpg"
+            alt="Spare Part 2"
+            class="part-image"
+          />
+          <div class="part-details">
+            <h3 class="part-name">Oil Filter</h3>
+            <p class="part-price">$20.00</p>
+            <div class="part-review">★★★☆☆ (150 reviews)</div>
+            <div class="part-actions">
+              <a href="buynow.html"><button class="buy-button">Buy</button></a>
+              <a href="spares.html#spare5" class="view-details">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="spare-part-card">
+          <img
+            src="image/black-605334_1280.jpg"
+            alt="Spare Part 3"
+            class="part-image"
+          />
+          <div class="part-details">
+            <h3 class="part-name">Air Filter</h3>
+            <p class="part-price">$30.00</p>
+            <div class="part-review">★★★★★ (320 reviews)</div>
+            <div class="part-actions">
+              <a href="buynow.html"><button class="buy-button">Buy</button></a>
+              <a href="spares.html#spare6" class="view-details">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-news" id="blogs">
+      <div class="post">
+        <div class="post-date">July 28, 2024</div>
+        <h2 class="post-title">New Features in Our Latest Update</h2>
+        <p class="post-excerpt">
+          We've added several new features to enhance your experience. This
+          update includes a more intuitive user interface and improved
+          performance...
+        </p>
+        <a href="blogs.html#blog1" class="read-more"
+          >Read More <span class="arrow">&rarr;</span></a
+        >
+
+        <div class="post-date">July 22, 2024</div>
+        <h2 class="post-title">Understanding the Basics of Car Insurance</h2>
+        <p class="post-excerpt">
+          Car insurance can be confusing. This guide breaks down the basics,
+          helping you understand different types of coverage and how to choose
+          the right policy...
+        </p>
+        <a href="blogs.html#blog2" class="read-more"
+          >Read More <span class="arrow">&rarr;</span></a
+        >
+
+        <div class="post-date">July 22, 2024</div>
+        <h2 class="post-title">Understanding the Basics of Car Insurance</h2>
+        <p class="post-excerpt">
+          Car insurance can be confusing. This guide breaks down the basics,
+          helping you understand different types of coverage and how to choose
+          the right policy...
+        </p>
+        <a href="blogs.html#blog3" class="read-more"
+          >Read More <span class="arrow">&rarr;</span></a
+        >
+
+        <div class="post-date">July 25, 2024</div>
+        <h2 class="post-title">Tips for Maintaining Your Vehicle</h2>
+        <p class="post-excerpt">
+          Regular maintenance is key to keeping your vehicle running smoothly.
+          In this article, we share essential tips to help you maintain your car
+          and extend its lifespan...
+        </p>
+        <a href="blogs.html#blog4" class="read-more"
+          >Read More <span class="arrow">&rarr;</span></a
+        >
+
+        <div class="post-date">July 22, 2024</div>
+        <h2 class="post-title">Understanding the Basics of Car Insurance</h2>
+        <p class="post-excerpt">
+          Car insurance can be confusing. This guide breaks down the basics,
+          helping you understand different types of coverage and how to choose
+          the right policy...
+        </p>
+        <a href="blogs.html#blog5" class="read-more"
+          >Read More <span class="arrow">&rarr;</span></a
+        >
+
+        <div class="post-date">July 22, 2024</div>
+        <h2 class="post-title">Understanding the Basics of Car Insurance</h2>
+        <p class="post-excerpt">
+          Car insurance can be confusing. This guide breaks down the basics,
+          helping you understand different types of coverage and how to choose
+          the right policy...
+        </p>
+        <a href="blogs.html#blog6" class="read-more"
+          >Read More <span class="arrow">&rarr;</span></a
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="company-info">
+          <h2>Company Name</h2>
+          <p>Your company's tagline or a brief description.</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com" target="_blank" class="social-icon"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank" class="social-icon"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank" class="social-icon"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <div class="footer-links">
+          <div class="legal-links">
+            <h3>Legal</h3>
+            <a href="#" class="footer-link">Privacy Policy</a><br />
+            <a href="#" class="footer-link">Refund Policy</a><br />
+            <a href="#" class="footer-link">Cookie Policy</a><br />
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>Email: info@company.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Street, City, Country</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

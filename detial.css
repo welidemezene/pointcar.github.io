@@ -1,0 +1,276 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  opacity: 0.7;
+}
+
+.navbar .logo {
+  color: #f00505;
+  font-size: 34px;
+  font-weight: bolder;
+}
+.menu-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  margin-right: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+  color: red;
+}
+
+* Other styles omitted for brevity */
+
+/* Search form styling */
+.search-form {
+  display: inline-block;
+  margin: auto;
+}
+form {
+  margin-right: 50px;
+}
+
+.search-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 200px;
+  transition: width 0.4s ease-in-out;
+}
+
+.search-form input:focus {
+  width: 300px;
+}
+
+.search-form button {
+  padding: 8px 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #45a049;
+}
+
+.search-form i {
+  font-size: 18px;
+}
+/* Styling for buttons */
+.button,
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover,
+.back-button:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .search-container {
+    margin-left: auto;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Container for detailed content */
+.container1 {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.container1 h1 {
+  padding-top: 20px;
+}
+
+.container1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container1 {
+    padding: 10px;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.company-info,
+.social-media,
+.footer-links {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.company-info {
+  max-width: 300px;
+}
+
+.company-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.company-info p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #1da1f2;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #1da1f2;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media,
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .company-info {
+    text-align: center;
+  }
+}
