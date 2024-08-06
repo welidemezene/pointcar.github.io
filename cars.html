@@ -198,31 +198,33 @@
     </footer>
 
     <script>
-      function searchSite(event) {
-        event.preventDefault();
-        const query = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
+      const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.getElementById("nav-links");
 
-        // Simple client-side search example
-        // Assuming you have a list of items to search through
-        const items = document.querySelectorAll(".item"); // Replace with actual items
-        items.forEach((item) => {
-          const content = item.textContent.toLowerCase();
-          if (content.includes(query)) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
-          }
-        });
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 
-        // Alternatively, you could redirect to a server-side search page
-        // window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-      }
+function searchSite(event) {
+  event.preventDefault();
+  const query = document.getElementById("searchInput").value.toLowerCase();
 
-      function goBack() {
-        window.history.back();
-      }
+  // Simple client-side search example
+  // Assuming you have a list of items to search through
+  const items = document.querySelectorAll(".item"); // Replace with actual items
+  items.forEach((item) => {
+    const content = item.textContent.toLowerCase();
+    if (content.includes(query)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+
+  // Alternatively, you could redirect to a server-side search page
+  // window.location.href = `search.html?query=${encodeURIComponent(query)}`;
+}
+
     </script>
   </body>
 </html>
