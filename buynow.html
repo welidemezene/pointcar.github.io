@@ -111,7 +111,14 @@
 
     <script>
 
-      function searchSite(event) {
+     const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.getElementById("nav-links");
+
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+function searchSite(event) {
   event.preventDefault();
   const query = document.getElementById("searchInput").value.toLowerCase();
 
@@ -131,12 +138,6 @@
   // window.location.href = `search.html?query=${encodeURIComponent(query)}`;
 }
 
-      function payWithBank() {
-        // Example function for bank payment
-        alert(
-          "Bank transfer option selected. Please follow the instructions sent to your email."
-        );
-      }
 
     </script>
   </body>
