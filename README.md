@@ -62,3 +62,5 @@ CSS3: Flexbox, Grid, transitions, media queries
 JavaScript: Mobile menu toggle
 
 Font Awesome Icons (placeholder in current code)
+
+⭐ Don’t forget to star the repo if you liked it!
