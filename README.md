@@ -1,5 +1,9 @@
 Car Dealership Website - Project README
-https://screenshot.png
+## 📸 Screenshots
+
+### Desktop View
+![Desktop Screenshot](./image/pointcarscreenshot.png)
+
 
 📌 Overview
 A responsive car dealership website built with HTML, CSS, and JavaScript. This project features:
