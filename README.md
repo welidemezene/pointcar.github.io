@@ -1,4 +1,4 @@
-Car Dealership Website - Project README
+Car Dealership Website
 ## 📸 Screenshots
 
 ### Desktop View
@@ -54,13 +54,4 @@ Blog/News Section
 
 Footer (multi-column layout)
 
-🛠️ Technologies Used
-HTML5: Semantic markup
 
-CSS3: Flexbox, Grid, transitions, media queries
-
-JavaScript: Mobile menu toggle
-
-Font Awesome Icons (placeholder in current code)
-
-⭐ Don’t forget to star the repo if you liked it!
