@@ -1,5 +1,5 @@
 Car Dealership Website
-## 📸 Screenshots
+
 
 ### Desktop View
 ![Desktop Screenshot](./image/pointcarscreenshot.png)
